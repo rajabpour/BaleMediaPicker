@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0FA7CAC4E35C0D3A204812C7 /* Pods-BaleMediaPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaleMediaPicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaleMediaPicker_Tests/Pods-BaleMediaPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		21C9AA130969D4542A7E0D13 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		21C9AA130969D4542A7E0D13 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4E1F037EABAF66ED55237A5E /* Pods_BaleMediaPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaleMediaPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		559ADEC9DE58E1523A7555A8 /* Pods-BaleMediaPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaleMediaPicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaleMediaPicker_Example/Pods-BaleMediaPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BaleMediaPicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaleMediaPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,9 +42,9 @@
 		607FACE51AFB9204008FA782 /* BaleMediaPicker_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaleMediaPicker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		60CB3A18E4916050D4065EAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		60CB3A18E4916050D4065EAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7E1577A847BF680D55337677 /* Pods_BaleMediaPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaleMediaPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88C5F4D3C7B35C189F516C79 /* BaleMediaPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BaleMediaPicker.podspec; path = ../BaleMediaPicker.podspec; sourceTree = "<group>"; };
+		88C5F4D3C7B35C189F516C79 /* BaleMediaPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BaleMediaPicker.podspec; path = ../BaleMediaPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB3367E639BCF0306D1D1EFE /* Pods-BaleMediaPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaleMediaPicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaleMediaPicker_Tests/Pods-BaleMediaPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB60AE74606BF218DEB240BA /* Pods-BaleMediaPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaleMediaPicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaleMediaPicker_Example/Pods-BaleMediaPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,6 +212,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CWJ37C37Y7;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -481,7 +482,9 @@
 			baseConfigurationReference = 559ADEC9DE58E1523A7555A8 /* Pods-BaleMediaPicker_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CWJ37C37Y7;
 				INFOPLIST_FILE = BaleMediaPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -496,7 +499,9 @@
 			baseConfigurationReference = EB60AE74606BF218DEB240BA /* Pods-BaleMediaPicker_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CWJ37C37Y7;
 				INFOPLIST_FILE = BaleMediaPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

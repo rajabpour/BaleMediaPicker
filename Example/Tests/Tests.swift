@@ -1,5 +1,5 @@
 import XCTest
-import BaleMediaPicker
+//import BaleMediaPicker
 
 class Tests: XCTestCase {
     
