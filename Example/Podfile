@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BaleMediaPicker_Example' do
+  pod 'BaleMediaPicker', :path => '../'
+
+  target 'BaleMediaPicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
