@@ -22,7 +22,7 @@ pod 'BaleMediaPicker'
 
 ## Author
 
-masoudrajabpour@gmail.com, masoudrajabpour@gmail.com
+masoudrajabpour@gmail.com, mmtarighat@gmail.com
 
 ## License
 
