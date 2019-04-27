@@ -30,7 +30,7 @@ This is a simple Gallery Media Picker for iOS applications. written in swift.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'BaleMediaPicker/Classes/*'
+  s.source_files = 'BaleMediaPicker/Classes/**/*.swift'
   
   # s.resource_bundles = {
   #   'BaleMediaPicker' => ['BaleMediaPicker/Assets/*.png']
