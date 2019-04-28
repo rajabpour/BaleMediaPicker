@@ -1,0 +1,16 @@
+PODS:
+  - BaleMediaPicker (0.1.0)
+
+DEPENDENCIES:
+  - BaleMediaPicker (from `../`)
+
+EXTERNAL SOURCES:
+  BaleMediaPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BaleMediaPicker: cfd412ce7581b0cf723d63291cbfbb3c1b24588d
+
+PODFILE CHECKSUM: 578a70505ea143484e725b6cf2a72e614a95d35d
+
+COCOAPODS: 1.5.3

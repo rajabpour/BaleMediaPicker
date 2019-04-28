@@ -1,0 +1,22 @@
+{
+  "name": "BaleMediaPicker",
+  "version": "0.1.0",
+  "summary": "A short description of BaleMediaPicker.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/masoudrajabpour@gmail.com/BaleMediaPicker",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "masoudrajabpour@gmail.com": "masoudrajabpour@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/masoudrajabpour@gmail.com/BaleMediaPicker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BaleMediaPicker/Classes/**/*"
+}

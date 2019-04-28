@@ -1,0 +1,6 @@
+framework module BaleMediaPicker {
+  umbrella header "BaleMediaPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

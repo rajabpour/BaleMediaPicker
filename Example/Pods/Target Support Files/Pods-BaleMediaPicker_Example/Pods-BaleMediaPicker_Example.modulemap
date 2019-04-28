@@ -1,0 +1,6 @@
+framework module Pods_BaleMediaPicker_Example {
+  umbrella header "Pods-BaleMediaPicker_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

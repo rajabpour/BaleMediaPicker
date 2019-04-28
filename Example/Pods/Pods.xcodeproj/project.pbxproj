@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		118FBFD22274685E0034DDEE /* BaleMediaPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118FBFBC2274685D0034DDEE /* BaleMediaPicker.storyboard */; };
+		118FBFD42274685E0034DDEE /* BLEVideoIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC02274685E0034DDEE /* BLEVideoIndicatorView.swift */; };
+		118FBFD52274685E0034DDEE /* BLECollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC12274685E0034DDEE /* BLECollectionCell.swift */; };
+		118FBFD62274685E0034DDEE /* BLEVideoIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC22274685E0034DDEE /* BLEVideoIconView.swift */; };
+		118FBFD72274685E0034DDEE /* BLECheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC32274685E0034DDEE /* BLECheckmarkView.swift */; };
+		118FBFD82274685E0034DDEE /* BLEAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC42274685E0034DDEE /* BLEAssetCell.swift */; };
+		118FBFD92274685E0034DDEE /* BLECollectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC52274685E0034DDEE /* BLECollectionFooterView.swift */; };
+		118FBFDA2274685E0034DDEE /* BLENavigateBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC62274685E0034DDEE /* BLENavigateBarView.swift */; };
+		118FBFDB2274685E0034DDEE /* BLESlomoIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC72274685E0034DDEE /* BLESlomoIconView.swift */; };
+		118FBFDC2274685E0034DDEE /* BaleMediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC82274685E0034DDEE /* BaleMediaPicker.swift */; };
+		118FBFDD2274685E0034DDEE /* BLECollectionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC92274685E0034DDEE /* BLECollectionPickerViewController.swift */; };
+		118FBFDE2274685E0034DDEE /* BaleMediaPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118FBFCB2274685E0034DDEE /* BaleMediaPicker.storyboard */; };
+		118FBFDF2274685E0034DDEE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFCE2274685E0034DDEE /* Extensions.swift */; };
+		118FBFE02274685E0034DDEE /* SelectedMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFCF2274685E0034DDEE /* SelectedMediaModel.swift */; };
+		118FBFE12274685E0034DDEE /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFD02274685E0034DDEE /* CollectionModel.swift */; };
+		118FBFE22274685E0034DDEE /* BLEImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFD12274685E0034DDEE /* BLEImagePickerViewController.swift */; };
+		11902A522275445700F3EE15 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11902A512275445700F3EE15 /* Media.xcassets */; };
+		154564906FB03214741677DF01BFA5A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1CF370A9FBFF3D56502C08501C9D7994 /* Pods-BaleMediaPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 216BF1B780D5EF46304D879DF7F93353 /* Pods-BaleMediaPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BE8FF257B823299B8E7BB97B4ADD4DC /* BaleMediaPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91288818805ECC943D65023CA0B7B802 /* BaleMediaPicker-dummy.m */; };
+		518EAFEBB02BB051D1DA3A04F7A82B08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		896EA097B566933070342819AF11FDF0 /* Pods-BaleMediaPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3304BA5C145AAB1F028C468252FA3100 /* Pods-BaleMediaPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AF40774CD8E49D7BC0F041C325CB8F0 /* Pods-BaleMediaPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B11B04FB353E40B18B8B59EE1A271 /* Pods-BaleMediaPicker_Tests-dummy.m */; };
+		BE4E2BCB2948A0384BB57936F7C474C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		DEEAD72024AF54A34DF253AE217E030D /* Pods-BaleMediaPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ED7D6DCEC47118770985905A3B7D2 /* Pods-BaleMediaPicker_Example-dummy.m */; };
+		F4C91E5C7F2EA24D0E82E553F2B56EBC /* BaleMediaPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1052E5359BE9A30B883DBBE9ADF5B1B /* BaleMediaPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3946295E6ED49CD2400700470A88E99B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 348D93305E7B0B90EEB018165B387E5C;
+			remoteInfo = "Pods-BaleMediaPicker_Example";
+		};
+		6F09F9706B43F960B706CA5535C06B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607F8CE1DF9E8FA788DC42595CDB36BF;
+			remoteInfo = BaleMediaPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F3D42BFABD1E7E00B101BFEB78B637 /* BaleMediaPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaleMediaPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118FBFBD2274685D0034DDEE /* fa */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fa; path = BaleMediaPicker.storyboard; sourceTree = "<group>"; };
+		118FBFC02274685E0034DDEE /* BLEVideoIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEVideoIndicatorView.swift; sourceTree = "<group>"; };
+		118FBFC12274685E0034DDEE /* BLECollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECollectionCell.swift; sourceTree = "<group>"; };
+		118FBFC22274685E0034DDEE /* BLEVideoIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEVideoIconView.swift; sourceTree = "<group>"; };
+		118FBFC32274685E0034DDEE /* BLECheckmarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECheckmarkView.swift; sourceTree = "<group>"; };
+		118FBFC42274685E0034DDEE /* BLEAssetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEAssetCell.swift; sourceTree = "<group>"; };
+		118FBFC52274685E0034DDEE /* BLECollectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECollectionFooterView.swift; sourceTree = "<group>"; };
+		118FBFC62274685E0034DDEE /* BLENavigateBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLENavigateBarView.swift; sourceTree = "<group>"; };
+		118FBFC72274685E0034DDEE /* BLESlomoIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLESlomoIconView.swift; sourceTree = "<group>"; };
+		118FBFC82274685E0034DDEE /* BaleMediaPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaleMediaPicker.swift; path = BaleMediaPicker/Classes/BaleMediaPicker.swift; sourceTree = "<group>"; };
+		118FBFC92274685E0034DDEE /* BLECollectionPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLECollectionPickerViewController.swift; path = BaleMediaPicker/Classes/BLECollectionPickerViewController.swift; sourceTree = "<group>"; };
+		118FBFCC2274685E0034DDEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = BaleMediaPicker.storyboard; sourceTree = "<group>"; };
+		118FBFCE2274685E0034DDEE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		118FBFCF2274685E0034DDEE /* SelectedMediaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedMediaModel.swift; sourceTree = "<group>"; };
+		118FBFD02274685E0034DDEE /* CollectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
+		118FBFD12274685E0034DDEE /* BLEImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLEImagePickerViewController.swift; path = BaleMediaPicker/Classes/BLEImagePickerViewController.swift; sourceTree = "<group>"; };
+		11902A512275445700F3EE15 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = BaleMediaPicker/Assets/Media.xcassets; sourceTree = "<group>"; };
+		1267108418B3423A5EF77914F2AE2299 /* Pods-BaleMediaPicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaleMediaPicker_Tests-resources.sh"; sourceTree = "<group>"; };
+		1811D7BEBBD6FC94BB4EBF2FB2715235 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		18630B842B4BFA6232B76117D54E74D7 /* Pods-BaleMediaPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaleMediaPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		188C1F155924E44A4B9706B51E069D30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		216BF1B780D5EF46304D879DF7F93353 /* Pods-BaleMediaPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaleMediaPicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3304BA5C145AAB1F028C468252FA3100 /* Pods-BaleMediaPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaleMediaPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		37DC7F0EEF350A9C291916347EA8ECAC /* Pods-BaleMediaPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaleMediaPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40D12F3A919232281CE5E1BE4A7FB274 /* Pods_BaleMediaPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaleMediaPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B9A04C630E83ED40EC750286311B5F /* BaleMediaPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = BaleMediaPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		66B9D084FA892A35D0029FCF96F8C6BF /* Pods-BaleMediaPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaleMediaPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E5ED86879B1656740DCDCAC111CEC71 /* Pods-BaleMediaPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaleMediaPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		73FCF70BDE33652B50A1FBFF887BB51A /* Pods-BaleMediaPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaleMediaPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7417A970DE9333CECFF788ECCC483AD3 /* Pods_BaleMediaPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaleMediaPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C16944ADCF1C1FA6C13AB74073D163 /* Pods-BaleMediaPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaleMediaPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7CD5FF05DCAB3E80505E9D1F9B2584E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5ED7D6DCEC47118770985905A3B7D2 /* Pods-BaleMediaPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaleMediaPicker_Example-dummy.m"; sourceTree = "<group>"; };
+		8F20AA40D997AC2B1C3020B347937A6C /* Pods-BaleMediaPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaleMediaPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8FA00FB988D8908962C1750BBC9874CD /* Pods-BaleMediaPicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaleMediaPicker_Example-resources.sh"; sourceTree = "<group>"; };
+		91288818805ECC943D65023CA0B7B802 /* BaleMediaPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BaleMediaPicker-dummy.m"; sourceTree = "<group>"; };
+		B48FE07F1C91875953963859D9D9F05F /* Pods-BaleMediaPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BaleMediaPicker_Example.modulemap"; sourceTree = "<group>"; };
+		B829F009C62DB4FD697D50F94B16C97E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BE7A9BD0930F2995C8847023DD720160 /* Pods-BaleMediaPicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaleMediaPicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C304EF7958ECB55D0A372916CD55229A /* Pods-BaleMediaPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaleMediaPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C349F86434904375A95D0ACFEA17347B /* BaleMediaPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaleMediaPicker.xcconfig; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF12ADD33348A4605F73BADBCD5EE87D /* Pods-BaleMediaPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BaleMediaPicker_Tests.modulemap"; sourceTree = "<group>"; };
+		D09B11B04FB353E40B18B8B59EE1A271 /* Pods-BaleMediaPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaleMediaPicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		D183A79C89EDEAA3F91E860284BEFD1B /* Pods-BaleMediaPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaleMediaPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DB7DDDE6E4C139BF10EF9E40B3E39106 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1BB9D5A5BA7D90AA05573D8728676C /* BaleMediaPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BaleMediaPicker-prefix.pch"; sourceTree = "<group>"; };
+		EFD6CC726A4350924C50A8C449D91627 /* BaleMediaPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BaleMediaPicker.modulemap; sourceTree = "<group>"; };
+		F1052E5359BE9A30B883DBBE9ADF5B1B /* BaleMediaPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BaleMediaPicker-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23CCAC1558401D455FACDB42CE8D213A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154564906FB03214741677DF01BFA5A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CBA998BFE507538589F29F11812D464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4E2BCB2948A0384BB57936F7C474C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD249E997DC35AC591ECBDBA9DA05147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518EAFEBB02BB051D1DA3A04F7A82B08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		118FBFBA2274685D0034DDEE /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base.lproj;
+			path = BaleMediaPicker/Classes/Base.lproj;
+			sourceTree = "<group>";
+		};
+		118FBFBB2274685D0034DDEE /* fa.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				118FBFBC2274685D0034DDEE /* BaleMediaPicker.storyboard */,
+			);
+			name = fa.lproj;
+			path = BaleMediaPicker/Classes/fa.lproj;
+			sourceTree = "<group>";
+		};
+		118FBFBF2274685E0034DDEE /* views */ = {
+			isa = PBXGroup;
+			children = (
+				118FBFC02274685E0034DDEE /* BLEVideoIndicatorView.swift */,
+				118FBFC12274685E0034DDEE /* BLECollectionCell.swift */,
+				118FBFC22274685E0034DDEE /* BLEVideoIconView.swift */,
+				118FBFC32274685E0034DDEE /* BLECheckmarkView.swift */,
+				118FBFC42274685E0034DDEE /* BLEAssetCell.swift */,
+				118FBFC52274685E0034DDEE /* BLECollectionFooterView.swift */,
+				118FBFC62274685E0034DDEE /* BLENavigateBarView.swift */,
+				118FBFC72274685E0034DDEE /* BLESlomoIconView.swift */,
+			);
+			name = views;
+			path = BaleMediaPicker/Classes/views;
+			sourceTree = "<group>";
+		};
+		118FBFCA2274685E0034DDEE /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				118FBFCB2274685E0034DDEE /* BaleMediaPicker.storyboard */,
+			);
+			name = en.lproj;
+			path = BaleMediaPicker/Classes/en.lproj;
+			sourceTree = "<group>";
+		};
+		118FBFCD2274685E0034DDEE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				118FBFCE2274685E0034DDEE /* Extensions.swift */,
+				118FBFCF2274685E0034DDEE /* SelectedMediaModel.swift */,
+				118FBFD02274685E0034DDEE /* CollectionModel.swift */,
+			);
+			name = models;
+			path = BaleMediaPicker/Classes/models;
+			sourceTree = "<group>";
+		};
+		36C197C40FBD700C09BF216FA4400F3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFD6CC726A4350924C50A8C449D91627 /* BaleMediaPicker.modulemap */,
+				C349F86434904375A95D0ACFEA17347B /* BaleMediaPicker.xcconfig */,
+				91288818805ECC943D65023CA0B7B802 /* BaleMediaPicker-dummy.m */,
+				DF1BB9D5A5BA7D90AA05573D8728676C /* BaleMediaPicker-prefix.pch */,
+				F1052E5359BE9A30B883DBBE9ADF5B1B /* BaleMediaPicker-umbrella.h */,
+				188C1F155924E44A4B9706B51E069D30 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BaleMediaPicker";
+			sourceTree = "<group>";
+		};
+		46C5913B8DB661F04FEB33BB2DF81069 /* Pods-BaleMediaPicker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DB7DDDE6E4C139BF10EF9E40B3E39106 /* Info.plist */,
+				CF12ADD33348A4605F73BADBCD5EE87D /* Pods-BaleMediaPicker_Tests.modulemap */,
+				37DC7F0EEF350A9C291916347EA8ECAC /* Pods-BaleMediaPicker_Tests-acknowledgements.markdown */,
+				8F20AA40D997AC2B1C3020B347937A6C /* Pods-BaleMediaPicker_Tests-acknowledgements.plist */,
+				D09B11B04FB353E40B18B8B59EE1A271 /* Pods-BaleMediaPicker_Tests-dummy.m */,
+				BE7A9BD0930F2995C8847023DD720160 /* Pods-BaleMediaPicker_Tests-frameworks.sh */,
+				1267108418B3423A5EF77914F2AE2299 /* Pods-BaleMediaPicker_Tests-resources.sh */,
+				3304BA5C145AAB1F028C468252FA3100 /* Pods-BaleMediaPicker_Tests-umbrella.h */,
+				C304EF7958ECB55D0A372916CD55229A /* Pods-BaleMediaPicker_Tests.debug.xcconfig */,
+				D183A79C89EDEAA3F91E860284BEFD1B /* Pods-BaleMediaPicker_Tests.release.xcconfig */,
+			);
+			name = "Pods-BaleMediaPicker_Tests";
+			path = "Target Support Files/Pods-BaleMediaPicker_Tests";
+			sourceTree = "<group>";
+		};
+		926E9C60F895A3313DE06021EDBF7176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06F3D42BFABD1E7E00B101BFEB78B637 /* BaleMediaPicker.framework */,
+				40D12F3A919232281CE5E1BE4A7FB274 /* Pods_BaleMediaPicker_Example.framework */,
+				7417A970DE9333CECFF788ECCC483AD3 /* Pods_BaleMediaPicker_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96F2D26970DDC90667393387D8AA7DAA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5FF9CADD37239A8C49AB5FF3072029D /* Pods-BaleMediaPicker_Example */,
+				46C5913B8DB661F04FEB33BB2DF81069 /* Pods-BaleMediaPicker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B5FF9CADD37239A8C49AB5FF3072029D /* Pods-BaleMediaPicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7CD5FF05DCAB3E80505E9D1F9B2584E2 /* Info.plist */,
+				B48FE07F1C91875953963859D9D9F05F /* Pods-BaleMediaPicker_Example.modulemap */,
+				66B9D084FA892A35D0029FCF96F8C6BF /* Pods-BaleMediaPicker_Example-acknowledgements.markdown */,
+				6E5ED86879B1656740DCDCAC111CEC71 /* Pods-BaleMediaPicker_Example-acknowledgements.plist */,
+				7E5ED7D6DCEC47118770985905A3B7D2 /* Pods-BaleMediaPicker_Example-dummy.m */,
+				73FCF70BDE33652B50A1FBFF887BB51A /* Pods-BaleMediaPicker_Example-frameworks.sh */,
+				8FA00FB988D8908962C1750BBC9874CD /* Pods-BaleMediaPicker_Example-resources.sh */,
+				216BF1B780D5EF46304D879DF7F93353 /* Pods-BaleMediaPicker_Example-umbrella.h */,
+				18630B842B4BFA6232B76117D54E74D7 /* Pods-BaleMediaPicker_Example.debug.xcconfig */,
+				79C16944ADCF1C1FA6C13AB74073D163 /* Pods-BaleMediaPicker_Example.release.xcconfig */,
+			);
+			name = "Pods-BaleMediaPicker_Example";
+			path = "Target Support Files/Pods-BaleMediaPicker_Example";
+			sourceTree = "<group>";
+		};
+		BB730BA7DBE7332129932B65EADB7EA2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				44B9A04C630E83ED40EC750286311B5F /* BaleMediaPicker.podspec */,
+				B829F009C62DB4FD697D50F94B16C97E /* LICENSE */,
+				1811D7BEBBD6FC94BB4EBF2FB2715235 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				F2F2C784E8F81BDBCC7DBCC87915D07B /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				926E9C60F895A3313DE06021EDBF7176 /* Products */,
+				96F2D26970DDC90667393387D8AA7DAA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F037F8523F24DBBD7D287B0507DD5AE9 /* BaleMediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				11902A512275445700F3EE15 /* Media.xcassets */,
+				118FBFC82274685E0034DDEE /* BaleMediaPicker.swift */,
+				118FBFBA2274685D0034DDEE /* Base.lproj */,
+				118FBFC92274685E0034DDEE /* BLECollectionPickerViewController.swift */,
+				118FBFD12274685E0034DDEE /* BLEImagePickerViewController.swift */,
+				118FBFCA2274685E0034DDEE /* en.lproj */,
+				118FBFBB2274685D0034DDEE /* fa.lproj */,
+				118FBFCD2274685E0034DDEE /* models */,
+				118FBFBF2274685E0034DDEE /* views */,
+				BB730BA7DBE7332129932B65EADB7EA2 /* Pod */,
+				36C197C40FBD700C09BF216FA4400F3A /* Support Files */,
+			);
+			name = BaleMediaPicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F2F2C784E8F81BDBCC7DBCC87915D07B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F037F8523F24DBBD7D287B0507DD5AE9 /* BaleMediaPicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01870CA3277DE42CDBDD9A4D30D46A2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C91E5C7F2EA24D0E82E553F2B56EBC /* BaleMediaPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDDDFDE8CEE80A8FBE96D7CDDA83FE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896EA097B566933070342819AF11FDF0 /* Pods-BaleMediaPicker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2791E6A28E4F7FCFAF5315D267A0BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF370A9FBFF3D56502C08501C9D7994 /* Pods-BaleMediaPicker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		348D93305E7B0B90EEB018165B387E5C /* Pods-BaleMediaPicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C9D47731033D79312EC464D4C9A6209 /* Build configuration list for PBXNativeTarget "Pods-BaleMediaPicker_Example" */;
+			buildPhases = (
+				FB2791E6A28E4F7FCFAF5315D267A0BF /* Headers */,
+				CE8153F63279CBA31273B6D8A620AE17 /* Sources */,
+				BD249E997DC35AC591ECBDBA9DA05147 /* Frameworks */,
+				1817E17B346620603A566A23482E671C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EAEFB69695E7BEDCF144F071EC0B1AC /* PBXTargetDependency */,
+			);
+			name = "Pods-BaleMediaPicker_Example";
+			productName = "Pods-BaleMediaPicker_Example";
+			productReference = 40D12F3A919232281CE5E1BE4A7FB274 /* Pods_BaleMediaPicker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		607F8CE1DF9E8FA788DC42595CDB36BF /* BaleMediaPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59519C221538FB719D19DFD223B643C8 /* Build configuration list for PBXNativeTarget "BaleMediaPicker" */;
+			buildPhases = (
+				01870CA3277DE42CDBDD9A4D30D46A2D /* Headers */,
+				9A43A2ADA586C2E69F959288A66957AC /* Sources */,
+				6CBA998BFE507538589F29F11812D464 /* Frameworks */,
+				D37A3E13851DEF16D4EBD0AD2FAEE07D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaleMediaPicker;
+			productName = BaleMediaPicker;
+			productReference = 06F3D42BFABD1E7E00B101BFEB78B637 /* BaleMediaPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BE0299D071BE1EE203C1CD3E3C76EB7 /* Pods-BaleMediaPicker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A7E3CA29378ED2A4DF3951D1591E29 /* Build configuration list for PBXNativeTarget "Pods-BaleMediaPicker_Tests" */;
+			buildPhases = (
+				4DDDDFDE8CEE80A8FBE96D7CDDA83FE8 /* Headers */,
+				4C8ED41041CC7901E0FEADF5D27C68D8 /* Sources */,
+				23CCAC1558401D455FACDB42CE8D213A /* Frameworks */,
+				34DDCB16D33BE80B380F3639491D31E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B4153A19D38498AD64E4529316ABE0E /* PBXTargetDependency */,
+			);
+			name = "Pods-BaleMediaPicker_Tests";
+			productName = "Pods-BaleMediaPicker_Tests";
+			productReference = 7417A970DE9333CECFF788ECCC483AD3 /* Pods_BaleMediaPicker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					607F8CE1DF9E8FA788DC42595CDB36BF = {
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fa,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 926E9C60F895A3313DE06021EDBF7176 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607F8CE1DF9E8FA788DC42595CDB36BF /* BaleMediaPicker */,
+				348D93305E7B0B90EEB018165B387E5C /* Pods-BaleMediaPicker_Example */,
+				8BE0299D071BE1EE203C1CD3E3C76EB7 /* Pods-BaleMediaPicker_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1817E17B346620603A566A23482E671C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DDCB16D33BE80B380F3639491D31E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37A3E13851DEF16D4EBD0AD2FAEE07D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118FBFDE2274685E0034DDEE /* BaleMediaPicker.storyboard in Resources */,
+				11902A522275445700F3EE15 /* Media.xcassets in Resources */,
+				118FBFD22274685E0034DDEE /* BaleMediaPicker.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C8ED41041CC7901E0FEADF5D27C68D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF40774CD8E49D7BC0F041C325CB8F0 /* Pods-BaleMediaPicker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A43A2ADA586C2E69F959288A66957AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118FBFD82274685E0034DDEE /* BLEAssetCell.swift in Sources */,
+				118FBFD42274685E0034DDEE /* BLEVideoIndicatorView.swift in Sources */,
+				118FBFDD2274685E0034DDEE /* BLECollectionPickerViewController.swift in Sources */,
+				118FBFE12274685E0034DDEE /* CollectionModel.swift in Sources */,
+				118FBFDB2274685E0034DDEE /* BLESlomoIconView.swift in Sources */,
+				2BE8FF257B823299B8E7BB97B4ADD4DC /* BaleMediaPicker-dummy.m in Sources */,
+				118FBFE22274685E0034DDEE /* BLEImagePickerViewController.swift in Sources */,
+				118FBFDC2274685E0034DDEE /* BaleMediaPicker.swift in Sources */,
+				118FBFD52274685E0034DDEE /* BLECollectionCell.swift in Sources */,
+				118FBFDF2274685E0034DDEE /* Extensions.swift in Sources */,
+				118FBFD92274685E0034DDEE /* BLECollectionFooterView.swift in Sources */,
+				118FBFDA2274685E0034DDEE /* BLENavigateBarView.swift in Sources */,
+				118FBFD62274685E0034DDEE /* BLEVideoIconView.swift in Sources */,
+				118FBFE02274685E0034DDEE /* SelectedMediaModel.swift in Sources */,
+				118FBFD72274685E0034DDEE /* BLECheckmarkView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8153F63279CBA31273B6D8A620AE17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEEAD72024AF54A34DF253AE217E030D /* Pods-BaleMediaPicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B4153A19D38498AD64E4529316ABE0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BaleMediaPicker_Example";
+			target = 348D93305E7B0B90EEB018165B387E5C /* Pods-BaleMediaPicker_Example */;
+			targetProxy = 3946295E6ED49CD2400700470A88E99B /* PBXContainerItemProxy */;
+		};
+		4EAEFB69695E7BEDCF144F071EC0B1AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BaleMediaPicker;
+			target = 607F8CE1DF9E8FA788DC42595CDB36BF /* BaleMediaPicker */;
+			targetProxy = 6F09F9706B43F960B706CA5535C06B01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		118FBFBC2274685D0034DDEE /* BaleMediaPicker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118FBFBD2274685D0034DDEE /* fa */,
+			);
+			name = BaleMediaPicker.storyboard;
+			sourceTree = "<group>";
+		};
+		118FBFCB2274685E0034DDEE /* BaleMediaPicker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				118FBFCC2274685E0034DDEE /* en */,
+			);
+			name = BaleMediaPicker.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0843398E01A572C03536EC66BE3C55DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C16944ADCF1C1FA6C13AB74073D163 /* Pods-BaleMediaPicker_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaleMediaPicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaleMediaPicker_Example/Pods-BaleMediaPicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CC72D3BE8002B6B150E74336D1B571A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C349F86434904375A95D0ACFEA17347B /* BaleMediaPicker.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BaleMediaPicker/BaleMediaPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BaleMediaPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BaleMediaPicker/BaleMediaPicker.modulemap";
+				PRODUCT_MODULE_NAME = BaleMediaPicker;
+				PRODUCT_NAME = BaleMediaPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35993C9F124D0642F52831798365F122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18630B842B4BFA6232B76117D54E74D7 /* Pods-BaleMediaPicker_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaleMediaPicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaleMediaPicker_Example/Pods-BaleMediaPicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E2A5C4B27558FFB5F9B1E9AB5CFE3DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D183A79C89EDEAA3F91E860284BEFD1B /* Pods-BaleMediaPicker_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaleMediaPicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaleMediaPicker_Tests/Pods-BaleMediaPicker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2D8ABB6E4BC099AA916C6E74DA83921 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BF17B80227EE551582927B0FBE01EF40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DF50FBC3349CB8945757C0F83E65EC58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C349F86434904375A95D0ACFEA17347B /* BaleMediaPicker.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BaleMediaPicker/BaleMediaPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BaleMediaPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BaleMediaPicker/BaleMediaPicker.modulemap";
+				PRODUCT_MODULE_NAME = BaleMediaPicker;
+				PRODUCT_NAME = BaleMediaPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECDF3D800C9CC023558DC90EC9FD6A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C304EF7958ECB55D0A372916CD55229A /* Pods-BaleMediaPicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaleMediaPicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaleMediaPicker_Tests/Pods-BaleMediaPicker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10A7E3CA29378ED2A4DF3951D1591E29 /* Build configuration list for PBXNativeTarget "Pods-BaleMediaPicker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDF3D800C9CC023558DC90EC9FD6A54 /* Debug */,
+				8E2A5C4B27558FFB5F9B1E9AB5CFE3DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D8ABB6E4BC099AA916C6E74DA83921 /* Debug */,
+				BF17B80227EE551582927B0FBE01EF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59519C221538FB719D19DFD223B643C8 /* Build configuration list for PBXNativeTarget "BaleMediaPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC72D3BE8002B6B150E74336D1B571A /* Debug */,
+				DF50FBC3349CB8945757C0F83E65EC58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C9D47731033D79312EC464D4C9A6209 /* Build configuration list for PBXNativeTarget "Pods-BaleMediaPicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35993C9F124D0642F52831798365F122 /* Debug */,
+				0843398E01A572C03536EC66BE3C55DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
