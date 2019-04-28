@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		118FBFD22274685E0034DDEE /* BaleMediaPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118FBFBC2274685D0034DDEE /* BaleMediaPicker.storyboard */; };
 		118FBFD42274685E0034DDEE /* BLEVideoIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC02274685E0034DDEE /* BLEVideoIndicatorView.swift */; };
 		118FBFD52274685E0034DDEE /* BLECollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC12274685E0034DDEE /* BLECollectionCell.swift */; };
 		118FBFD62274685E0034DDEE /* BLEVideoIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC22274685E0034DDEE /* BLEVideoIconView.swift */; };
@@ -18,12 +17,13 @@
 		118FBFDB2274685E0034DDEE /* BLESlomoIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC72274685E0034DDEE /* BLESlomoIconView.swift */; };
 		118FBFDC2274685E0034DDEE /* BaleMediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC82274685E0034DDEE /* BaleMediaPicker.swift */; };
 		118FBFDD2274685E0034DDEE /* BLECollectionPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFC92274685E0034DDEE /* BLECollectionPickerViewController.swift */; };
-		118FBFDE2274685E0034DDEE /* BaleMediaPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118FBFCB2274685E0034DDEE /* BaleMediaPicker.storyboard */; };
 		118FBFDF2274685E0034DDEE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFCE2274685E0034DDEE /* Extensions.swift */; };
 		118FBFE02274685E0034DDEE /* SelectedMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFCF2274685E0034DDEE /* SelectedMediaModel.swift */; };
 		118FBFE12274685E0034DDEE /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFD02274685E0034DDEE /* CollectionModel.swift */; };
 		118FBFE22274685E0034DDEE /* BLEImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FBFD12274685E0034DDEE /* BLEImagePickerViewController.swift */; };
 		11902A522275445700F3EE15 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11902A512275445700F3EE15 /* Media.xcassets */; };
+		11902A5C2275557500F3EE15 /* BaleMediaPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11902A562275557400F3EE15 /* BaleMediaPicker.storyboard */; };
+		11902A5D2275557500F3EE15 /* BaleMediaPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11902A5A2275557500F3EE15 /* BaleMediaPicker.storyboard */; };
 		154564906FB03214741677DF01BFA5A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		1CF370A9FBFF3D56502C08501C9D7994 /* Pods-BaleMediaPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 216BF1B780D5EF46304D879DF7F93353 /* Pods-BaleMediaPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BE8FF257B823299B8E7BB97B4ADD4DC /* BaleMediaPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91288818805ECC943D65023CA0B7B802 /* BaleMediaPicker-dummy.m */; };
@@ -54,7 +54,6 @@
 
 /* Begin PBXFileReference section */
 		06F3D42BFABD1E7E00B101BFEB78B637 /* BaleMediaPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaleMediaPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		118FBFBD2274685D0034DDEE /* fa */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fa; path = BaleMediaPicker.storyboard; sourceTree = "<group>"; };
 		118FBFC02274685E0034DDEE /* BLEVideoIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEVideoIndicatorView.swift; sourceTree = "<group>"; };
 		118FBFC12274685E0034DDEE /* BLECollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLECollectionCell.swift; sourceTree = "<group>"; };
 		118FBFC22274685E0034DDEE /* BLEVideoIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEVideoIconView.swift; sourceTree = "<group>"; };
@@ -65,12 +64,13 @@
 		118FBFC72274685E0034DDEE /* BLESlomoIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLESlomoIconView.swift; sourceTree = "<group>"; };
 		118FBFC82274685E0034DDEE /* BaleMediaPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaleMediaPicker.swift; path = BaleMediaPicker/Classes/BaleMediaPicker.swift; sourceTree = "<group>"; };
 		118FBFC92274685E0034DDEE /* BLECollectionPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLECollectionPickerViewController.swift; path = BaleMediaPicker/Classes/BLECollectionPickerViewController.swift; sourceTree = "<group>"; };
-		118FBFCC2274685E0034DDEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = BaleMediaPicker.storyboard; sourceTree = "<group>"; };
 		118FBFCE2274685E0034DDEE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		118FBFCF2274685E0034DDEE /* SelectedMediaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedMediaModel.swift; sourceTree = "<group>"; };
 		118FBFD02274685E0034DDEE /* CollectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
 		118FBFD12274685E0034DDEE /* BLEImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLEImagePickerViewController.swift; path = BaleMediaPicker/Classes/BLEImagePickerViewController.swift; sourceTree = "<group>"; };
 		11902A512275445700F3EE15 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = BaleMediaPicker/Assets/Media.xcassets; sourceTree = "<group>"; };
+		11902A572275557400F3EE15 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = BaleMediaPicker.storyboard; sourceTree = "<group>"; };
+		11902A5B2275557500F3EE15 /* fa */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fa; path = BaleMediaPicker.storyboard; sourceTree = "<group>"; };
 		1267108418B3423A5EF77914F2AE2299 /* Pods-BaleMediaPicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaleMediaPicker_Tests-resources.sh"; sourceTree = "<group>"; };
 		1811D7BEBBD6FC94BB4EBF2FB2715235 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18630B842B4BFA6232B76117D54E74D7 /* Pods-BaleMediaPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaleMediaPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,23 +134,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		118FBFBA2274685D0034DDEE /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Base.lproj;
-			path = BaleMediaPicker/Classes/Base.lproj;
-			sourceTree = "<group>";
-		};
-		118FBFBB2274685D0034DDEE /* fa.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				118FBFBC2274685D0034DDEE /* BaleMediaPicker.storyboard */,
-			);
-			name = fa.lproj;
-			path = BaleMediaPicker/Classes/fa.lproj;
-			sourceTree = "<group>";
-		};
 		118FBFBF2274685E0034DDEE /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,15 +150,6 @@
 			path = BaleMediaPicker/Classes/views;
 			sourceTree = "<group>";
 		};
-		118FBFCA2274685E0034DDEE /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				118FBFCB2274685E0034DDEE /* BaleMediaPicker.storyboard */,
-			);
-			name = en.lproj;
-			path = BaleMediaPicker/Classes/en.lproj;
-			sourceTree = "<group>";
-		};
 		118FBFCD2274685E0034DDEE /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +159,32 @@
 			);
 			name = models;
 			path = BaleMediaPicker/Classes/models;
+			sourceTree = "<group>";
+		};
+		11902A552275557400F3EE15 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				11902A562275557400F3EE15 /* BaleMediaPicker.storyboard */,
+			);
+			name = en.lproj;
+			path = BaleMediaPicker/Assets/en.lproj;
+			sourceTree = "<group>";
+		};
+		11902A582275557400F3EE15 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base.lproj;
+			path = BaleMediaPicker/Assets/Base.lproj;
+			sourceTree = "<group>";
+		};
+		11902A592275557500F3EE15 /* fa.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				11902A5A2275557500F3EE15 /* BaleMediaPicker.storyboard */,
+			);
+			name = fa.lproj;
+			path = BaleMediaPicker/Assets/fa.lproj;
 			sourceTree = "<group>";
 		};
 		36C197C40FBD700C09BF216FA4400F3A /* Support Files */ = {
@@ -296,13 +296,13 @@
 		F037F8523F24DBBD7D287B0507DD5AE9 /* BaleMediaPicker */ = {
 			isa = PBXGroup;
 			children = (
+				11902A582275557400F3EE15 /* Base.lproj */,
+				11902A552275557400F3EE15 /* en.lproj */,
+				11902A592275557500F3EE15 /* fa.lproj */,
 				11902A512275445700F3EE15 /* Media.xcassets */,
 				118FBFC82274685E0034DDEE /* BaleMediaPicker.swift */,
-				118FBFBA2274685D0034DDEE /* Base.lproj */,
 				118FBFC92274685E0034DDEE /* BLECollectionPickerViewController.swift */,
 				118FBFD12274685E0034DDEE /* BLEImagePickerViewController.swift */,
-				118FBFCA2274685E0034DDEE /* en.lproj */,
-				118FBFBB2274685D0034DDEE /* fa.lproj */,
 				118FBFCD2274685E0034DDEE /* models */,
 				118FBFBF2274685E0034DDEE /* views */,
 				BB730BA7DBE7332129932B65EADB7EA2 /* Pod */,
@@ -459,9 +459,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				118FBFDE2274685E0034DDEE /* BaleMediaPicker.storyboard in Resources */,
 				11902A522275445700F3EE15 /* Media.xcassets in Resources */,
-				118FBFD22274685E0034DDEE /* BaleMediaPicker.storyboard in Resources */,
+				11902A5D2275557500F3EE15 /* BaleMediaPicker.storyboard in Resources */,
+				11902A5C2275557500F3EE15 /* BaleMediaPicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,18 +524,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		118FBFBC2274685D0034DDEE /* BaleMediaPicker.storyboard */ = {
+		11902A562275557400F3EE15 /* BaleMediaPicker.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				118FBFBD2274685D0034DDEE /* fa */,
+				11902A572275557400F3EE15 /* en */,
 			);
 			name = BaleMediaPicker.storyboard;
 			sourceTree = "<group>";
 		};
-		118FBFCB2274685E0034DDEE /* BaleMediaPicker.storyboard */ = {
+		11902A5A2275557500F3EE15 /* BaleMediaPicker.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				118FBFCC2274685E0034DDEE /* en */,
+				11902A5B2275557500F3EE15 /* fa */,
 			);
 			name = BaleMediaPicker.storyboard;
 			sourceTree = "<group>";
