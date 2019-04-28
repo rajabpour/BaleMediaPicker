@@ -1,6 +1,5 @@
 # BaleMediaPicker
 
-[![CI Status](https://img.shields.io/travis/masoudrajabpour@gmail.com/BaleMediaPicker.svg?style=flat)](https://travis-ci.org/masoudrajabpour@gmail.com/BaleMediaPicker)
 [![Version](https://img.shields.io/cocoapods/v/BaleMediaPicker.svg?style=flat)](https://cocoapods.org/pods/BaleMediaPicker)
 [![License](https://img.shields.io/cocoapods/l/BaleMediaPicker.svg?style=flat)](https://cocoapods.org/pods/BaleMediaPicker/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/BaleMediaPicker.svg?style=flat)](https://cocoapods.org/pods/BaleMediaPicker)
@@ -20,10 +19,11 @@ it, simply add the following line to your Podfile:
 pod 'BaleMediaPicker'
 ```
 
-## Author
+## Authors
 
 masoudrajabpour@gmail.com, mmtarighat@gmail.com
 
 ## License
 
 BaleMediaPicker is available under the MIT license. See the LICENSE file for more info.
+
