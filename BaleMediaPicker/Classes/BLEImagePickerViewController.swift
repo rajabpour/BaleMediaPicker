@@ -45,6 +45,11 @@ open class BLEImagePickerViewController: UIViewController {
         headerView.navigateDelegate = self
         headerView.setSelectedCount(with: self.selectedAssets.count)
         headerView.setCollectionTitle(with: self.selectedCollection?.title ?? "")
+        if #available(iOS 10.0, *) {
+            collection.prefetchDataSource = self
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     //MARK: grab collections
@@ -116,6 +121,15 @@ open class BLEImagePickerViewController: UIViewController {
     }
     
 }
+extension BLEImagePickerViewController: UICollectionViewDataSourcePrefetching{
+    public func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        
+    }
+    public func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
+        
+    }
+}
+
 extension BLEImagePickerViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     ///MARK collection view delegate
     public func numberOfSections(in collectionView: UICollectionView) -> Int {

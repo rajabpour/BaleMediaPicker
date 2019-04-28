@@ -191,7 +191,6 @@
                                         <connections>
                                             <outlet property="dataSource" destination="Us8-Vl-vjR" id="4qh-7S-UpT"/>
                                             <outlet property="delegate" destination="Us8-Vl-vjR" id="sP1-0S-gGI"/>
-                                            <outlet property="prefetchDataSource" destination="Us8-Vl-vjR" id="nxH-hl-TZM"/>
                                         </connections>
                                     </collectionView>
                                 </subviews>
