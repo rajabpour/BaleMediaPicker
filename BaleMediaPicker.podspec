@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BaleMediaPicker'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'this is a simple Gallery Media Picker for iOS applications'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ This is a simple Gallery Media Picker for iOS applications. written in swift.
   s.source           = { :git => 'https://github.com/rajabpour/BaleMediaPicker.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.0'
   s.swift_version = '4.0'
   s.source_files = 'BaleMediaPicker/Classes/**/*.swift'
   s.resources = 'BaleMediaPicker/Assets/**/*'
