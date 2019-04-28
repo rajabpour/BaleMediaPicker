@@ -69,11 +69,11 @@ open class BLEImagePickerViewController: UIViewController {
                     let (mediaCount, mediaAsset) = obj.mediaCount
                     if obj.localizedTitle == "Camera Roll"{
                         print("CameraRoll founded")
-                        self.selectedCollection = CollectionModel(title: (obj.localizedTitle ?? "no name"), count: 0, collection:obj, image: UIImage.bundled("ic_personalSpace")!)
+                        self.selectedCollection = CollectionModel(title: (obj.localizedTitle ?? "no name"), count: 0, collection:obj, image: UIImage.bundled("ic_personalSpace", bundle: Bundle(for: BLEImagePickerViewController.self))!)
                     }
                     if mediaCount > 0 , let asset = mediaAsset{
                         PHImageManager.default().requestImage(for:asset , targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFit, options: nil) { (image, _) in
-                            let newCollection = CollectionModel(title: (obj.localizedTitle ?? "no name"), count: mediaCount, collection:obj,image: image ?? UIImage.bundled("ic_personalSpace")!)
+                            let newCollection = CollectionModel(title: (obj.localizedTitle ?? "no name"), count: mediaCount, collection:obj,image: image ?? UIImage.bundled("ic_personalSpace", bundle: Bundle(for: BLEImagePickerViewController.self))!)
                             self.albums.append(newCollection)
                         }
                     }
@@ -196,7 +196,7 @@ extension BLEImagePickerViewController : BLENavigateBarViewDelegate{
     }
     
     func headerViewGalleryDidTap(_ sender : Any) {
-        let storyboard = UIStoryboard(name: "BaleMediaPicker", bundle: Bundle.framework)
+        let storyboard = UIStoryboard(name: "BaleMediaPicker", bundle: Bundle(for: BLEImagePickerViewController.self))
         let popupVC =  storyboard.instantiateViewController(withIdentifier:"BLECollectionPickerViewController") as! BLECollectionPickerViewController
         popupVC.delegate = self
         popupVC.albums = self.albums

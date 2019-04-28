@@ -9,21 +9,13 @@
 import Foundation
 import Photos
 
-let frameworkBundle = Bundle(identifier: "ai.bale.BaleMediaPicker")!
-public extension Bundle {
-    static var framework: Bundle {
-        get {
-            return frameworkBundle
-        }
-    }
-}
 public extension UIImage {
-    class func bundled(_ named: String) -> UIImage? {
+    class func bundled(_ named: String, bundle: Bundle) -> UIImage? {
         
         if let appImage = UIImage(named: named) {
             return appImage
         }
-        return UIImage(named: named, in: Bundle.framework, compatibleWith: UITraitCollection(displayScale: UIScreen.main.scale))
+        return UIImage(named: named, in: bundle, compatibleWith: UITraitCollection(displayScale: UIScreen.main.scale))
     }
 }
 extension PHAssetCollection {

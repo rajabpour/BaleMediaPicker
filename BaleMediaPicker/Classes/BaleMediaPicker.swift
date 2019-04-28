@@ -18,7 +18,7 @@ public class BaleMediaPicker {
     }
     private func presentPicker() {
         
-        let storyboard = UIStoryboard(name: "BaleMediaPicker", bundle: Bundle.framework)
+        let storyboard = UIStoryboard(name: "BaleMediaPicker", bundle: Bundle(for: BaleMediaPicker.self))
         let picker =  storyboard.instantiateViewController(withIdentifier:"BaleMediaPicker") as! BLEImagePickerViewController
         picker.modalPresentationStyle = .popover
         picker.delegate = delegate

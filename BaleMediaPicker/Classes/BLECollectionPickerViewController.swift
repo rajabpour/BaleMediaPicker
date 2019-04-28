@@ -49,7 +49,7 @@ class BLECollectionPickerViewController: UIViewController {
                     let mediaCount: Int = obj.mediaCount.0
                     if mediaCount > 0 , let asset = obj.mediaCount.1{
                             PHImageManager.default().requestImage(for:asset , targetSize: CGSize(width: 250, height: 250), contentMode: .aspectFit, options: nil) { (image, _) in
-                                let newCollection = CollectionModel(title: (obj.localizedTitle ?? "no name"), count: mediaCount, collection:obj,image: image ?? UIImage.bundled("ic_personalSpace")!)
+                                let newCollection = CollectionModel(title: (obj.localizedTitle ?? "no name"), count: mediaCount, collection:obj,image: image ?? UIImage.bundled("ic_personalSpace", bundle: Bundle(for: BLECollectionPickerViewController.self))!)
                                 self.albums.append(newCollection)
                             }
                         }
