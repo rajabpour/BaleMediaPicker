@@ -25,5 +25,5 @@ masoudrajabpour@gmail.com, mmtarighat@gmail.com
 
 ## License
 
-BaleMediaPicker is available under the GPL license. See the LICENSE file for more info.
+BaleMediaPicker is available under the GPL-3.0 license. See the LICENSE file for more info.
 
