@@ -10,6 +10,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+The latest version of BaleMediaPicker require:
+    Swift 4+
+    iOS 9+
+
 ## Installation
 
 BaleMediaPicker is available through [CocoaPods](https://cocoapods.org). To install
@@ -26,8 +30,8 @@ import BaleMediaPicker
 import Photos
 
 //call mediaPicker
-        let pickerView = BaleMediaPicker(self) //self: your viewController
-        pickerView.show()
+let pickerView = BaleMediaPicker(self) //self: your viewController
+pickerView.show()
 ```
 
 ```swift
@@ -38,6 +42,8 @@ extension ViewController :BaleMediaPickerDelegate{
     }
 }
 ```
+
+Don't forgot to set "Privacy - Photo Library Usage Description" permission to your application info.plist
 
 ## Authors
 
