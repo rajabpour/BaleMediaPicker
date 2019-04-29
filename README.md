@@ -43,7 +43,7 @@ extension ViewController :BaleMediaPickerDelegate{
 }
 ```
 
-Don't forgot to set "Privacy - Photo Library Usage Description" permission to your application info.plist
+Don't forget to set "Privacy - Photo Library Usage Description" permission to your application info.plist
 
 ## Authors
 
