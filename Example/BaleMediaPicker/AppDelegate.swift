@@ -2,9 +2,7 @@
 //  AppDelegate.swift
 //  BaleMediaPicker
 //
-//  Created by masoudrajabpour@gmail.com on 04/27/2019.
-//  Copyright (c) 2019 masoudrajabpour@gmail.com. All rights reserved.
-//
+
 
 import UIKit
 

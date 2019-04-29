@@ -2,9 +2,6 @@
 //  BLEAssetCell.swift
 //  BaleMediaPicker
 //
-//  Created by Bale on 1/25/1398 AP.
-//  Copyright © 1398 bale. All rights reserved.
-//
 
 import Foundation
 class BLEAssetCell: UICollectionViewCell {

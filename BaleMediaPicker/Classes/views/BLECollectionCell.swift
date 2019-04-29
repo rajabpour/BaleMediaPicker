@@ -2,9 +2,6 @@
 //  BLECollectionCell.swift
 //  BaleMediaPicker
 //
-//  Created by Bale on 1/27/1398 AP.
-//  Copyright © 1398 bale. All rights reserved.
-//
 
 import Foundation
 class BLECollectionCell: UITableViewCell {
