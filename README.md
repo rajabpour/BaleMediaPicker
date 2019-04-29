@@ -19,6 +19,26 @@ it, simply add the following line to your Podfile:
 pod 'BaleMediaPicker'
 ```
 
+## How to use
+
+```ruby
+import BaleMediaPicker
+import Photos
+
+//call mediaPicker
+        let pickerView = BaleMediaPicker(self) //self: your viewController
+        pickerView.show()
+```
+
+```swift
+//get selected assets by implementing BaleMediaPickerDelegate
+extension ViewController :BaleMediaPickerDelegate{
+    func baleMediaPicker(_ assets: [PHAsset]) {
+        print(assets)
+    }
+}
+```
+
 ## Authors
 
 masoudrajabpour@gmail.com, mmtarighat@gmail.com
