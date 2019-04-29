@@ -21,7 +21,7 @@ pod 'BaleMediaPicker'
 
 ## How to use
 
-```ruby
+```swift
 import BaleMediaPicker
 import Photos
 
