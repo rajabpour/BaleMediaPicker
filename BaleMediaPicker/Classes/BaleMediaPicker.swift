@@ -19,8 +19,7 @@ public class BaleMediaPicker {
         let picker =  storyboard.instantiateViewController(withIdentifier:"BaleMediaPicker") as! BLEImagePickerViewController
         picker.modalPresentationStyle = .popover
         picker.delegate = delegate
-//        previusVC.view.addSubview(picker.view)
-//        print("")
+
       previusVC.present(picker, animated: true, completion: nil)
         
     }

@@ -36,12 +36,12 @@ class BLECollectionPickerViewController: UIViewController {
         options.sortDescriptors=[NSSortDescriptor(key:"localizedTitle", ascending: true)]
         let userAlbums = PHAssetCollection.fetchAssetCollections(with: PHAssetCollectionType.album, subtype: PHAssetCollectionSubtype.any, options: options)
         let smartAlbums = PHAssetCollection.fetchAssetCollections(with: PHAssetCollectionType.smartAlbum, subtype: PHAssetCollectionSubtype.any, options: options)
-        print("collection founds: \(userAlbums.count)")
+        print("Bale Media Picker: collection founds: \(userAlbums.count)")
         [userAlbums,smartAlbums].forEach { (albumObj) in
             albumObj.enumerateObjects{ (object: AnyObject!, count: Int, stop: UnsafeMutablePointer) in
                 if object is PHAssetCollection {
                     let obj:PHAssetCollection = object as! PHAssetCollection
-                    print("object(\((obj.localizedTitle ?? "noname")))")
+                    print("Bale Media Picker: object(\((obj.localizedTitle ?? "noname")))")
                     
                     let mediaCount: Int = obj.mediaCount.0
                     if mediaCount > 0 , let asset = obj.mediaCount.1{
@@ -79,7 +79,7 @@ extension BLECollectionPickerViewController:UITableViewDataSource,UITableViewDel
     }
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let album = self.albums[indexPath.row]
-        print("selected row: \(album.title)")
+        print("Bale Media Picker: selected row: \(album.title)")
         self.delegate?.collectionPickerDidSelect(album)
         self.dismiss(animated: true, completion: nil)
     }

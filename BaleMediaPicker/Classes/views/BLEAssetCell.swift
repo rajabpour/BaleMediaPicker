@@ -15,7 +15,7 @@ class BLEAssetCell: UICollectionViewCell {
         super.isSelected = selected
         // Show/hide overlay view
         overlayView.isHidden = !(selected)
-        print("isHidden","\(overlayView.isHidden)")
+        print("Bale Media Picker: isHidden","\(overlayView.isHidden)")
         self.bringSubview(toFront: overlayView)
     }
 
