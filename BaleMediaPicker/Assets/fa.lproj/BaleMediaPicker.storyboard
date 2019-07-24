@@ -34,12 +34,12 @@
                                                 <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xcj-Si-4cl">
                                                     <rect key="frame" x="112.5" y="7" width="150" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <state key="normal" title="انتخاب"/>
                                                     <connections>
                                                         <action selector="galleyDidTap:" destination="c3a-JN-WBP" eventType="touchUpInside" id="273-UW-tPd"/>
                                                     </connections>
                                                 </button>
-                                                <barButtonItem key="rightBarButtonItem" title="تمام (0)" id="MzA-qa-Tcc">
+                                                <barButtonItem key="rightBarButtonItem" title="ارسال (0)" id="MzA-qa-Tcc">
                                                     <connections>
                                                         <action selector="btnDoneDidTap:" destination="c3a-JN-WBP" id="c5j-qs-yZi"/>
                                                     </connections>

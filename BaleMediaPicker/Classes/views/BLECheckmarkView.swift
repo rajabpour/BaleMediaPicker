@@ -29,7 +29,7 @@ class BLECheckmarkView: UIView {
     }
 
     override func draw(_ rect: CGRect) {
-        print("checkmark: draw")
+        print("Bale Media Picker: checkmark: draw")
         // Border
         borderColor?.setFill()
         UIBezierPath(ovalIn: bounds).fill()

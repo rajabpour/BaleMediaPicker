@@ -56,22 +56,21 @@ open class BLEImagePickerViewController: UIViewController {
         options.sortDescriptors=[NSSortDescriptor(key:"localizedTitle", ascending: true)]
         let userAlbums = PHAssetCollection.fetchAssetCollections(with: PHAssetCollectionType.album, subtype: PHAssetCollectionSubtype.any, options: options)
         let smartAlbums = PHAssetCollection.fetchAssetCollections(with: PHAssetCollectionType.smartAlbum, subtype: PHAssetCollectionSubtype.any, options: options)
-        print("collection founds: \(userAlbums.count)")
+        print("Bale Media Picker: collection founds: \(userAlbums.count)")
         [userAlbums,smartAlbums].forEach { (albumObj) in
             albumObj.enumerateObjects{ (object: AnyObject!, count: Int, stop: UnsafeMutablePointer) in
                 if object is PHAssetCollection {
                     let obj:PHAssetCollection = object as! PHAssetCollection
-                    print("object(\((obj.localizedTitle ?? "noname")))")
+                    print("Bale Media Picker: object(\((obj.localizedTitle ?? "noname")))")
                     
                     let (mediaCount, mediaAsset) = obj.mediaCount
-                    if obj.localizedTitle == "Camera Roll"{
-                        print("CameraRoll founded")
-                        self.selectedCollection = CollectionModel(title: (obj.localizedTitle ?? "no name"), count: 0, collection:obj, image: UIImage.bundled("ic_personalSpace", bundle: Bundle(for: BLEImagePickerViewController.self))!)
-                    }
                     if mediaCount > 0 , let asset = mediaAsset{
                         PHImageManager.default().requestImage(for:asset , targetSize: CGSize(width: 100, height: 100), contentMode: .aspectFit, options: nil) { (image, _) in
                             let newCollection = CollectionModel(title: (obj.localizedTitle ?? "no name"), count: mediaCount, collection:obj,image: image ?? UIImage.bundled("ic_personalSpace", bundle: Bundle(for: BLEImagePickerViewController.self))!)
                             self.albums.append(newCollection)
+                            if(self.selectedCollection == nil){
+                                self.selectedCollection = newCollection
+                            }
                         }
                     }
                 }
@@ -87,7 +86,7 @@ open class BLEImagePickerViewController: UIViewController {
             return
         }
         backgroundQueue.async {
-            print("This is run on the background queue")
+            print("Bale Media Picker: This is run on the background queue")
             
             let fetchOptions=PHFetchOptions()
             fetchOptions.sortDescriptors=[NSSortDescriptor(key:"creationDate", ascending: false)]
@@ -99,11 +98,11 @@ open class BLEImagePickerViewController: UIViewController {
                     self.assets.append(asset)
                 }
             } else {
-                print("You got no media in collection(\(self.selectedCollection.title)).")
+                print("Bale Media Picker: You got no media in collection(\(self.selectedCollection.title)).")
             }
-            print("media count: \(self.assets.count)")
+            print("Bale Media Picker: media count: \(self.assets.count)")
             DispatchQueue.main.async {
-                print("This is run on the main queue, after the previous code in outer block")
+                print("Bale Media Picker: This is run on the main queue, after the previous code in outer block")
                 self.collection.reloadData()
             }
         }
@@ -204,7 +203,7 @@ extension BLEImagePickerViewController : BLENavigateBarViewDelegate{
 }
 extension BLEImagePickerViewController : BLECollectionPickerDelegate{
     func collectionPickerDidSelect(_ collection: CollectionModel) {
-        print("selected collection: \(collection.title)")
+        print("Bale Media Picker: selected collection: \(collection.title)")
         self.selectedCollection = collection
         self.headerView.setCollectionTitle(with: collection.title)
         self.loadMediasFromGallery()
